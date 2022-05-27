@@ -1,30 +1,31 @@
 /* Basic Style */
-body {
+.wrapper {
   background-color: #f8f8f8;
   color: #333;
   font-family: lato, sans-serif;
+  height: 100vh;
 }
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header__image {
   width: 100%;
 }
-.aaa .more_inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa { 
+  .header { 
     text-align: center;
   }
 
 }
-.centered-main-page-element {
+.main-container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -34,7 +35,7 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.add-taks__wrapper {
   display: flex;
 }
 ul {
@@ -87,7 +88,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.add-tasks__header {
   display: block;
   margin: 0 0 20px;
 }
