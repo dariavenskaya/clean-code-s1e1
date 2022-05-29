@@ -38,19 +38,17 @@
 .add-taks__wrapper {
   display: flex;
 }
-ul {
+.todo__list,
+.completed__list {
   margin: 0;
   padding: 0px;
 }
-li, 
-h3 {
-  list-style: none;
-}
-input,
-button{
+input{
   outline: none;
 }
-button {
+.add__btn,
+.edit,
+.delete {
   background: none;
   border: 0px;
   color: #888;
@@ -58,8 +56,11 @@ button {
   width: 60px;
   font-family: lato, sans-serif;
   cursor: pointer;
+  outline: none;
 }
-button:hover {
+.add__btn:hover,
+.edit:hover,
+.delete:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -72,6 +73,7 @@ label[for="new-task"] {
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
+  list-style: none;
 }
 input[type="text"] {
   margin: 0;
@@ -106,6 +108,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
 li > * {
   vertical-align: middle;
@@ -123,15 +126,16 @@ li > label {
 li >    input[type="text"] {
   width: 226px;
 }
-button.delete img {
+.todo__btn-img,
+.completed__btn-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.todo__btn-img:hover,
+.completed__btn-img:hover {
   transform: rotateZ(0);
 }
-
 /* Completed */
 ul#completed__list label {
   text-decoration: line-through;
