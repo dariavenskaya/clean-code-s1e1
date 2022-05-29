@@ -126,8 +126,7 @@ li > label {
 li >    input[type="text"] {
   width: 226px;
 }
-.todo__btn-img,
-.completed__btn-img {
+.remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
