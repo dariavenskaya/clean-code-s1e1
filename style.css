@@ -127,7 +127,7 @@ input[type="text"]:focus {
   transform: rotateZ(0);
 }
 /* Completed */
-.completed__task-label {
+.completed__list {
   text-decoration: line-through;
   color: #888;
 }
