@@ -18,7 +18,7 @@
         <div class="add">
           <h3 class="add__header header">Add Item</h3>
           <div class="add__wrapper">
-            <input class="add__task task" type="text">
+            <input class="add__task" type="text">
             <button class="add__btn">Add</button>
           </div>
       </div>
@@ -26,14 +26,14 @@
         <h3 class="todo__header header">Todo</h3>
         <ul class="todo__list">
           <li class="todo__new-task item">
-            <input type="checkbox">
-            <input class="todo__task task" type="text">
+            <input class ="todo__checkbox checkbox" type="checkbox">
+            <input class="todo__task edit-task" type="text">
             <label class="todo__task task">Pay Bills</label>
             <button class="todo__btn edit">Edit</button>
             <button class="todo__btn delete"><img class="todo__btn-img remove" src="./remove.svg" alt="Remove item"></button>
           </li>
           <li class="todo__edit-task item">
-            <input type="checkbox">
+            <input class ="todo__checkbox checkbox" type="checkbox">
             <label class="todo__task task">Go Shopping</label>
             <input class="todo__task edit-task" type="text" value="Go Shopping">
             <button class="todo__btn edit">Save</button>
@@ -45,9 +45,9 @@
         <h3 class="completed__header header">Completed</h3>
         <ul class="completed__list">
           <li class="completed__tasks item">
-            <input type="checkbox" checked>
+            <input class="completed__checkbox checkbox" type="checkbox" checked>
             <label class="completed__task task">See the Doctor</label>
-            <input  class="completed__task task" type="text">
+            <input  class="completed__task edit-task" type="text">
             <button class="completed__btn edit">Edit</button>
             <button class="completed__btn delete"><img class="completed__btn-img remove" src="./remove.svg" alt="Remove item"></button>
           </li>
